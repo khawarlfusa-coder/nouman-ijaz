@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  
+  /* Custom Luxury Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #08080C;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2A2A38;
+    border-radius: 4px;
+    border: 1px solid rgba(207, 167, 56, 0.2);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #CFA738;
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0CA 0%, #E6C564 35%, #C2952B 70%, #F5E5B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px -5px rgba(207, 167, 56, 0.2);
+}
+
+.glass-panel {
+  background: rgba(14, 14, 20, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(207, 167, 56, 0.35);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px -5px rgba(207, 167, 56, 0.15);
+}
+
+/* Story gradient animated ring */
+@keyframes ringSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.story-ring-active {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.story-gold-ring {
+  background: linear-gradient(135deg, #FFE8A3 0%, #D4AF37 40%, #8C6D1F 80%, #F9E7B9 100%);
+}
