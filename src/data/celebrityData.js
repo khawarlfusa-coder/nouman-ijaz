@@ -3,7 +3,7 @@ export const CELEBRITY_DATA = {
     name: "Naumaan Ijaz",
     nativeName: "نعمان اعجاز",
     tagline: "The Living Legend of Pakistani Television & Cinema",
-    subTagline: "Presidential Pride of Performance • Multi-Lux Style Award Laureate • 35+ Years of Screen Royalty",
+    subTagline: "Presidential Pride of Performance • Multi-Lux Style Award Laureate • 36+ Years of Screen Royalty",
     portrait: "/assets/images/naumaan-portrait.png",
     heroBackdrop: "/assets/images/event-stage.jpg",
     trophyImage: "/assets/images/awards-trophy.jpg",
@@ -53,39 +53,39 @@ export const CELEBRITY_DATA = {
       category: "Critics' Choice",
       year: "2019",
       by: "Lux Style Awards",
-      desc: "For the unforgettable, chilling portrayal of Jawad (Joi) in Dar Si Jaati Hai Sila."
+      desc: "For the chilling, psychologically complex portrayal of Jawad (Joi) in Dar Si Jaati Hai Sila."
     },
     {
       title: "Hum Honorary Excellence Award",
       category: "Landmark Contribution",
       year: "2022",
       by: "Hum Awards International",
-      desc: "Honored in Toronto/Houston for extraordinary mastery in Parizaad & Sang-e-Mah."
+      desc: "Honored globally in Toronto & Houston for extraordinary mastery in Parizaad & Sang-e-Mah."
     },
     {
-      title: "PTV National Award (Lifetime)",
+      title: "PTV Lifetime Excellence Award",
       category: "National Television Icon",
       year: "2014",
       by: "Pakistan Television Corporation",
-      desc: "Recognizing three decades of uninterrupted brilliance from golden era classics to modern epics."
+      desc: "Recognizing over three decades of uninterrupted brilliance from golden era classics to modern epics."
     }
   ],
 
-  // Main Page Instagram / WhatsApp Style Stories / Status
+  // Main Page Instagram / WhatsApp Style Stories / Status with UNIQUE IMAGES
   statusStories: [
     {
       id: "story-1",
       title: "Duniyapur Sets",
       tag: "On Set",
-      avatar: "/assets/images/naumaan-portrait.png",
+      avatar: "/assets/images/char-duniyapur.jpg",
       ringColor: "from-amber-400 via-rose-500 to-purple-600",
       timestamp: "18m ago",
       unseen: true,
       slides: [
         {
           type: "image",
-          url: "/assets/images/event-stage.jpg",
-          caption: "Chilling night shoot at the historic haveli. Nauroz Adam's wrath takes over tonight. Duniyapur fans, get ready!",
+          url: "/assets/images/char-duniyapur.jpg",
+          caption: "Night shoot in the ancient haveli courtyard. Nauroz Adam's reign continues.",
           location: "Location: Punjab Heritage Estate",
           duration: 5500
         },
@@ -93,7 +93,7 @@ export const CELEBRITY_DATA = {
           type: "text",
           bgGradient: "from-red-950 via-obsidian-900 to-black",
           text: "“طاقت کا نشہ انسان کو اندھا کر دیتا ہے، لیکن تاریخ کبھی کسی ظالم کو معاف نہیں کرتی۔”\n\n— Nauroz Adam on sets of Duniyapur",
-          caption: "A sneak peek into episode 18 monologue notes.",
+          caption: "Episode monologue notes.",
           location: "Director's Monitor",
           duration: 6000
         }
@@ -103,7 +103,7 @@ export const CELEBRITY_DATA = {
       id: "story-2",
       title: "Dallas Gala",
       tag: "USA Tour",
-      avatar: "/assets/images/awards-trophy.jpg",
+      avatar: "/assets/images/event-stage.jpg",
       ringColor: "from-yellow-400 via-amber-500 to-red-500",
       timestamp: "2h ago",
       unseen: true,
@@ -111,16 +111,8 @@ export const CELEBRITY_DATA = {
         {
           type: "image",
           url: "/assets/images/event-stage.jpg",
-          caption: "Humbled by the overwhelming love from the Pakistani & South Asian community in Dallas, Texas. Sold out hall!",
+          caption: "Humbled by the overwhelming love from the South Asian diaspora in Dallas, Texas.",
           location: "Dallas Convention Center, TX",
-          duration: 5000
-        },
-        {
-          type: "text",
-          bgGradient: "from-obsidian-900 via-gold-900/40 to-black",
-          text: "Over 3,000 attendees at the North American Heritage Gala. Thank you for keeping our Urdu language and drama culture alive overseas! ❤️🇵🇰",
-          caption: "Next Stop: Houston & Chicago",
-          location: "Dallas, Texas",
           duration: 5000
         }
       ]
@@ -128,15 +120,15 @@ export const CELEBRITY_DATA = {
     {
       id: "story-3",
       title: "Behroze Karim",
-      tag: "Parizaad Tribute",
-      avatar: "/assets/images/naumaan-portrait.png",
+      tag: "Parizaad",
+      avatar: "/assets/images/char-behroze.jpg",
       ringColor: "from-amber-300 via-gold-500 to-yellow-600",
       timestamp: "5h ago",
       unseen: false,
       slides: [
         {
           type: "image",
-          url: "/assets/images/naumaan-portrait.png",
+          url: "/assets/images/char-behroze.jpg",
           caption: "“کمزور لوگ بدلہ لیتے ہیں، طاقتور معاف کرتے ہیں، لیکن عقل مند نظر انداز کرتے ہیں...” — Behroze Karim",
           location: "Parizaad Archival Vault",
           duration: 6000
@@ -145,37 +137,36 @@ export const CELEBRITY_DATA = {
     },
     {
       id: "story-4",
-      title: "Acting Wisdom",
-      tag: "Masterclass",
-      avatar: "/assets/images/awards-trophy.jpg",
-      ringColor: "from-purple-500 via-pink-500 to-gold-400",
-      timestamp: "12h ago",
+      title: "Raqeeb Se",
+      tag: "Poetic Drama",
+      avatar: "/assets/images/char-maqsood.jpg",
+      ringColor: "from-sky-400 via-indigo-500 to-purple-500",
+      timestamp: "8h ago",
       unseen: false,
       slides: [
         {
-          type: "text",
-          bgGradient: "from-blue-950 via-obsidian-900 to-black",
-          text: "Advice to young actors:\n\n'Never act with your face alone. Act with your eyes, your breath, and your pauses. The silence between words is where the character truly breathes.'",
-          caption: "National College of Arts (NCA) Lecture Session",
-          location: "Lahore, Pakistan",
-          duration: 6000
+          type: "image",
+          url: "/assets/images/char-maqsood.jpg",
+          caption: "“دل کے معاملات میں کوئی جیتتا نہیں، بس کچھ لوگ ہار کر بھی امر ہو جاتے ہیں۔” — Maqsood Sahab",
+          location: "Lahore Heritage Library",
+          duration: 5500
         }
       ]
     },
     {
       id: "story-5",
-      title: "Brand Campaign",
-      tag: "J. Festive",
-      avatar: "/assets/images/event-stage.jpg",
+      title: "Brand Shoot",
+      tag: "Festive Attire",
+      avatar: "/assets/images/brand-royal-festive.jpg",
       ringColor: "from-emerald-400 via-teal-500 to-amber-400",
       timestamp: "1d ago",
       unseen: false,
       slides: [
         {
           type: "image",
-          url: "/assets/images/awards-trophy.jpg",
-          caption: "Behind the lens for the upcoming Royal Festive Men's Attire campaign. Handcrafted fabrics with timeless eastern poise.",
-          location: "Karachi Studio 4",
+          url: "/assets/images/brand-royal-festive.jpg",
+          caption: "Behind the lens for the Royal Festive campaign. Handcrafted fabrics with timeless eastern poise.",
+          location: "Karachi Studio",
           duration: 5000
         }
       ]
@@ -183,110 +174,58 @@ export const CELEBRITY_DATA = {
     {
       id: "story-6",
       title: "Lahore Evenings",
-      tag: "Personal",
-      avatar: "/assets/images/naumaan-portrait.png",
-      ringColor: "from-sky-400 via-indigo-500 to-rose-500",
+      tag: "Candid",
+      avatar: "/assets/images/lifestyle-lahore.jpg",
+      ringColor: "from-rose-400 via-pink-500 to-amber-400",
       timestamp: "2d ago",
       unseen: false,
       slides: [
         {
-          type: "text",
-          bgGradient: "from-emerald-950 via-obsidian-900 to-black",
-          text: "لاہور کی شام، کڑک چائے اور پرانے دوستوں کے ساتھ PTV کے سنہری دور کے قصے۔ زندگی سادگی میں ہی سب سے خوبصورت ہے۔",
-          caption: "Evening with family & legendary industry veterans.",
-          location: "Gulberg, Lahore",
+          type: "image",
+          url: "/assets/images/lifestyle-lahore.jpg",
+          caption: "لاہور کی شام، کڑک چائے اور پرانے دوستوں کے ساتھ یادیں۔ سادگی میں ہی خوبصورتی ہے۔",
+          location: "Walled City, Lahore",
           duration: 5500
         }
       ]
     }
   ],
 
-  // Comprehensive Filmography
+  // Comprehensive Filmography with DISTINCT CHARACTER STILLS FOR EVERY ENTRY
   filmography: [
     {
       id: "parizaad",
       title: "Parizaad",
       urduTitle: "پری زاد",
       year: "2021 - 2022",
-      role: "Behroze Karim (The Don with a Golden Heart)",
+      role: "Behroze Karim (The Aristocratic Don)",
       category: "tv-drama",
       featured: true,
       network: "Hum TV",
       director: "Shahzad Kashmiri",
-      rating: "9.6 / 10 (IMDb)",
-      awards: "Hum Award for Best Supporting Actor, Phenomenal Global Sensation",
-      image: "/assets/images/naumaan-portrait.png",
-      backdrop: "/assets/images/event-stage.jpg",
+      rating: "9.6 / 10",
+      awards: "Hum Award for Best Supporting Actor • Global Sensation",
+      image: "/assets/images/char-behroze.jpg",
+      backdrop: "/assets/images/char-behroze.jpg",
       quote: "ہم جیسے لوگ محبت میں بھی سودا نہیں کرتے، اپنی جان نچھاور کر دیتے ہیں۔",
-      synopsis: "In this landmark television epic, Naumaan Ijaz delivered one of the most culturally revered performances in Pakistani history as Behroze Karim—an enigmatic underworld tycoon whose aristocratic dignity and tragic fatherly bond with Parizaad left millions weeping globally."
+      synopsis: "In this landmark television epic, Naumaan Ijaz delivered an immortal performance as Behroze Karim—an enigmatic underworld tycoon whose aristocratic dignity and tragic fatherly bond with Parizaad left millions weeping worldwide."
     },
     {
       id: "sang-e-mah",
       title: "Sang-e-Mah",
       urduTitle: "سنگ ماہ",
       year: "2022",
-      role: "Haji Marjaan Khan (The Sovereign of the Jirga)",
+      role: "Haji Marjaan Khan (The Tribal Chieftain)",
       category: "tv-drama",
       featured: true,
       network: "Hum TV",
       director: "Saife Hassan",
       rating: "9.2 / 10",
-      awards: "Critics' Acclaim for Masterclass Dialogue Delivery",
-      image: "/assets/images/awards-trophy.jpg",
-      backdrop: "/assets/images/event-stage.jpg",
+      awards: "Critics' Acclaim for Majestic Dialogue Delivery",
+      image: "/assets/images/char-haji-marjaan.jpg",
+      backdrop: "/assets/images/char-haji-marjaan.jpg",
       quote: "جرگے کا فیصلہ پتھر پر لکیر ہوتا ہے، اور حاجی مرجان کبھی اپنے لفظ سے پیچھے نہیں ہٹتا۔",
-      synopsis: "Set against the rugged, majestic mountains of Laspeer, Haji Marjaan Khan embodies the ancient complexities of Pashtun tribal honour, guilt, and remorse. His majestic screen presence elevated the drama into an operatic tragedy."
-    },
-    {
-      id: "dar-si-jaati-hai-sila",
-      title: "Dar Si Jaati Hai Sila",
-      urduTitle: "ڈر سی جاتی ہے صلہ",
-      year: "2017 - 2018",
-      role: "Jawad / Joi (The Master Manipulator)",
-      category: "cult-role",
-      featured: true,
-      network: "Hum TV",
-      director: "Kashif Nisar",
-      rating: "9.3 / 10",
-      awards: "Lux Style Award for Best TV Actor (Critics' Choice)",
-      image: "/assets/images/naumaan-portrait.png",
-      backdrop: "/assets/images/event-stage.jpg",
-      quote: "جو شخص اندر سے مر چکا ہو، وہ دوسروں کی خوشی دیکھ کر خوش نہیں رہ سکتا۔",
-      synopsis: "Considered one of the most daring and psychologically terrifying antagonistic performances in modern Asian television. Naumaan Ijaz transformed into 'Joi', dissecting predator psychology within domestic boundaries."
-    },
-    {
-      id: "raqeeb-se",
-      title: "Raqeeb Se",
-      urduTitle: "رقیب سے",
-      year: "2021",
-      role: "Maqsood Sahab",
-      category: "tv-drama",
-      featured: true,
-      network: "Hum TV",
-      director: "Kashif Nisar",
-      rating: "9.1 / 10",
-      awards: "Universal Praise for Poetic Restraint",
-      image: "/assets/images/awards-trophy.jpg",
-      backdrop: "/assets/images/event-stage.jpg",
-      quote: "دل کے معاملات میں کوئی جیتتا نہیں، بس کچھ لوگ ہار کر بھی امر ہو جاتے ہیں۔",
-      synopsis: "A poetic masterpiece written by Bee Gul. Naumaan played Maqsood, a reserved intellectual whose former lover and her daughter return into his family's life, creating ripples of suppressed romance and timeless music."
-    },
-    {
-      id: "dunk",
-      title: "Dunk",
-      urduTitle: "ڈنک",
-      year: "2020 - 2021",
-      role: "Professor Humayun",
-      category: "tv-drama",
-      featured: false,
-      network: "ARY Digital",
-      director: "Badar Mehmood",
-      rating: "8.8 / 10",
-      awards: "Special Recognition for Social Impact",
-      image: "/assets/images/naumaan-portrait.png",
-      backdrop: "/assets/images/event-stage.jpg",
-      quote: "سچ کو ثابت کرنے کے لیے کبھی کبھی انسان کی پوری زندگی ناکافی ہو جاتی ہے۔",
-      synopsis: "A gripping legal and societal thriller. Naumaan portrayed a university professor falsely accused, demonstrating the vulnerability and devastating psychological toll on a family."
+      synopsis: "Set against the rugged mountains of Laspeer, Haji Marjaan Khan embodies the ancient complexities of Pashtun tribal honour, guilt, and remorse. His majestic screen presence elevated the drama into an operatic tragedy."
     },
     {
       id: "duniyapur",
@@ -299,28 +238,62 @@ export const CELEBRITY_DATA = {
       network: "Green Entertainment",
       director: "Shahid Shafaat",
       rating: "9.4 / 10",
-      awards: "Top Trending Television Blockbuster",
-      image: "/assets/images/event-stage.jpg",
-      backdrop: "/assets/images/event-stage.jpg",
+      awards: "Top Trending Blockbuster",
+      image: "/assets/images/char-duniyapur.jpg",
+      backdrop: "/assets/images/char-duniyapur.jpg",
       quote: "دنیا پور میں قانون صرف میرا ہے، اور عدل بھی وہی جو میں چاہوں۔",
-      synopsis: "Pakistan's most expensive, cinematic action-dynasty drama where Naumaan leads a cutthroat empire against rivals, captivating new-generation audiences with raw masculine authority."
+      synopsis: "Pakistan's high-budget cinematic action-dynasty drama where Naumaan leads a cutthroat empire against rivals, captivating new-generation audiences with raw authority."
     },
     {
-      id: "ramchand-pakistani",
-      title: "Ramchand Pakistani",
-      urduTitle: "رام چند پاکستانی",
-      year: "2008",
-      role: "Abdullah (The Resilient Father)",
-      category: "film",
+      id: "raqeeb-se",
+      title: "Raqeeb Se",
+      urduTitle: "رقیب سے",
+      year: "2021",
+      role: "Maqsood Sahab (The Melancholic Poet)",
+      category: "tv-drama",
       featured: true,
-      network: "International Theatrical Release",
+      network: "Hum TV",
+      director: "Kashif Nisar",
+      rating: "9.1 / 10",
+      awards: "Universal Praise for Poetic Restraint",
+      image: "/assets/images/char-maqsood.jpg",
+      backdrop: "/assets/images/char-maqsood.jpg",
+      quote: "دل کے معاملات میں کوئی جیتتا نہیں، بس کچھ لوگ ہار کر بھی امر ہو جاتے ہیں۔",
+      synopsis: "A poetic masterpiece written by Bee Gul. Naumaan played Maqsood, an intellectual whose former lover and her daughter return into his life, creating ripples of suppressed romance and timeless melody."
+    },
+    {
+      id: "dar-si-jaati-hai-sila",
+      title: "Dar Si Jaati Hai Sila",
+      urduTitle: "ڈر سی جاتی ہے صلہ",
+      year: "2017 - 2018",
+      role: "Jawad / Joi (The Deceptive Predator)",
+      category: "cult-role",
+      featured: true,
+      network: "Hum TV",
+      director: "Kashif Nisar",
+      rating: "9.3 / 10",
+      awards: "Lux Style Award for Best TV Actor (Critics' Choice)",
+      image: "/assets/images/char-joi.jpg",
+      backdrop: "/assets/images/char-joi.jpg",
+      quote: "جو شخص اندر سے مر چکا ہو، وہ دوسروں کی خوشی دیکھ کر خوش نہیں رہ سکتا۔",
+      synopsis: "Considered one of the most daring and psychologically terrifying antagonistic performances in modern Asian television. Naumaan dissected predator psychology within domestic boundaries."
+    },
+    {
+      id: "jackson-heights",
+      title: "Jackson Heights",
+      urduTitle: "جیکسن ہائٹس",
+      year: "2014 - 2015",
+      role: "Imran Bhatti (The NYC Cab Driver)",
+      category: "tv-drama",
+      featured: true,
+      network: "Urdu 1",
       director: "Mehreen Jabbar",
-      rating: "8.1 / 10 (FIPRESCI Prize Winner)",
-      awards: "International Film Festival Awards (Tribeca, London, Osian)",
-      image: "/assets/images/awards-trophy.jpg",
-      backdrop: "/assets/images/event-stage.jpg",
-      quote: "ہم غریبوں کے لیے سرحدیں دیواریں ہیں، لیکن دل تو ایک ہی آسمان دیکھتے ہیں۔",
-      synopsis: "A critically acclaimed international film portraying a Dalit Pakistani peasant caught across the Indo-Pak border. Naumaan's poignant, authentic portrayal earned global acclaim from international film critics."
+      rating: "9.0 / 10",
+      awards: "Hum Award Nomination • Fan Favorite",
+      image: "/assets/images/char-jackson-heights.jpg",
+      backdrop: "/assets/images/char-jackson-heights.jpg",
+      quote: "نیویارک کی سردی میں بھی دل اگر گرم ہو، تو انسان زندہ رہتا ہے۔",
+      synopsis: "Filmed in New York City, Naumaan played Imran Bhatti, an energetic, good-humored Pakistani cab driver navigating immigration hardships, marital compromise, and heartfelt resilience."
     },
     {
       id: "mazaaq-raat",
@@ -332,29 +305,29 @@ export const CELEBRITY_DATA = {
       featured: true,
       network: "Dunya News",
       director: "Dunya Television",
-      rating: "Iconic Television Host",
-      awards: "Top Satirical & Cultural Talk Show of the Decade",
-      image: "/assets/images/naumaan-portrait.png",
-      backdrop: "/assets/images/event-stage.jpg",
+      rating: "Beloved Talk Show Host",
+      awards: "Longest-running Satirical Hit Show",
+      image: "/assets/images/lifestyle-lahore.jpg",
+      backdrop: "/assets/images/lifestyle-lahore.jpg",
       quote: "ہنسنا اور ہنسانا عبادت ہے، خاص طور پر اس دور میں جہاں مسکراہٹیں نایاب ہیں۔",
-      synopsis: "Hosting hundreds of episodes, Naumaan redefined late-night South Asian political satire and celebrity interviews with unmatched wit, Punjabi warmth, intellectual grace, and spontaneous humor."
+      synopsis: "Hosting hundreds of episodes, Naumaan redefined late-night South Asian political satire and celebrity interviews with unmatched wit, Punjabi warmth, and spontaneous humor."
     },
     {
-      id: "mera-saaein",
-      title: "Mera Saaein",
-      urduTitle: "میرا سائیں",
-      year: "2010 - 2011",
-      role: "Malik Wajahat (Feudal Warlord)",
-      category: "cult-role",
+      id: "ramchand-pakistani",
+      title: "Ramchand Pakistani",
+      urduTitle: "رام چند پاکستانی",
+      year: "2008",
+      role: "Abdullah (The Resilient Father)",
+      category: "film",
       featured: true,
-      network: "ARY Digital",
-      director: "Babar Javed",
-      rating: "9.0 / 10",
-      awards: "Lux Style Award for Best Actor",
-      image: "/assets/images/naumaan-portrait.png",
+      network: "International Theatrical Release",
+      director: "Mehreen Jabbar",
+      rating: "8.1 / 10",
+      awards: "FIPRESCI Prize Winner • Tribeca Film Festival",
+      image: "/assets/images/awards-trophy.jpg",
       backdrop: "/assets/images/event-stage.jpg",
-      quote: "میں وہ نہیں جو اصولوں کا پابند ہو، میں وہ ہوں جو خود اصول بناتا ہے۔",
-      synopsis: "The quintessential anti-hero role that reshaped Pakistani drama history. Malik Wajahat's tyrannical charisma became a cultural benchmark for commanding antagonist portrayals."
+      quote: "ہم غریبوں کے لیے سرحدیں دیواریں ہیں، لیکن دل تو ایک ہی آسمان دیکھتے ہیں۔",
+      synopsis: "A critically acclaimed international film portraying a Dalit Pakistani peasant caught across the Indo-Pak border. Naumaan's poignant portrayal earned global acclaim from international critics."
     }
   ],
 
@@ -363,35 +336,38 @@ export const CELEBRITY_DATA = {
     {
       id: "up-1",
       title: "The Chronicles of Nauroz",
-      type: "Grand Theatrical Motion Picture",
-      timeline: "Late 2025 / Early 2026",
+      type: "70mm IMAX Motion Picture",
+      timeline: "2026",
       status: "In Post-Production",
-      director: "Acclaimed International Co-Production",
-      tagline: "The return of cinematic vengeance on 70mm IMAX.",
+      director: "International Co-Production",
+      tagline: "The return of cinematic vengeance on the big screen.",
       description: "An epic high-budget cross-border saga exploring deep Punjabi folklore, family honor, and international intrigue.",
-      badge: "Major Cinema Release"
+      badge: "Cinema Release",
+      image: "/assets/images/char-duniyapur.jpg"
     },
     {
       id: "up-2",
       title: "Sultanat-e-Khamoshi",
-      type: "Global OTT Prestige Limited Series",
+      type: "Global OTT Limited Series",
       timeline: "Mid 2025",
       status: "Principal Photography",
       director: "Kashif Nisar",
       tagline: "When words cease, the silence of power speaks.",
-      description: "A 10-episode psychological drama commissioned for international streaming platforms, featuring an ensemble star cast.",
-      badge: "OTT Original"
+      description: "A 10-episode psychological drama commissioned for international streaming platforms.",
+      badge: "OTT Original",
+      image: "/assets/images/char-behroze.jpg"
     },
     {
       id: "up-3",
       title: "The Method: Masterclass Tour",
-      type: "International Spoken-Word & Acting Workshop",
+      type: "Live Spoken-Word Workshop",
       timeline: "Winter 2025",
       status: "Dates Announced",
       director: "One ICA Global",
       tagline: "Live on stage in London, Dubai, New York & Lahore.",
       description: "Naumaan Ijaz breaks down the sacred architecture of method acting, Urdu dialogue delivery, and character transformation.",
-      badge: "Live Stage Tour"
+      badge: "Live Stage Tour",
+      image: "/assets/images/event-stage.jpg"
     }
   ],
 
@@ -405,6 +381,7 @@ export const CELEBRITY_DATA = {
       event: "South Asian Cinema & Cultural Legacy Gala",
       type: "Keynote & Red Carpet VIP Dinner",
       status: "Confirmed",
+      image: "/assets/images/event-stage.jpg",
       vipPerks: "Exclusive VIP table seating, photo session with Naumaan Ijaz, and signed commemorative plaque."
     },
     {
@@ -414,17 +391,19 @@ export const CELEBRITY_DATA = {
       date: "November 14, 2025",
       event: "An Evening with Naumaan Ijaz: 35 Years of Living Art",
       type: "Spoken Word, Monologue & Fan Interaction",
-      status: "Tickets Available Soon",
+      status: "Booking Open",
+      image: "/assets/images/awards-trophy.jpg",
       vipPerks: "Backstage champagne reception, Q&A session, and private meet-and-greet."
     },
     {
       id: "ev-3",
       city: "Dubai, United Arab Emirates",
-      venue: "Coca-Cola Arena & Armani Hotel Dubai",
+      venue: "Armani Hotel Dubai",
       date: "December 6 - 7, 2025",
-      event: "Middle East South Asian Film Awards & Business Forum",
+      event: "Middle East South Asian Film Awards",
       type: "Chief Guest & Lifetime Excellence Honor",
       status: "Confirmed",
+      image: "/assets/images/char-behroze.jpg",
       vipPerks: "Red carpet walk alongside international film luminaries and brand sponsors."
     },
     {
@@ -432,9 +411,10 @@ export const CELEBRITY_DATA = {
       city: "Toronto, Ontario, Canada",
       venue: "Metro Toronto Convention Centre",
       date: "January 24, 2026",
-      event: "Canadian Pakistani Diaspora Heritage Conclave",
+      event: "Pakistani Diaspora Heritage Conclave",
       type: "Cultural Icon Showcase & Live Panel",
       status: "Planning Stage",
+      image: "/assets/images/char-maqsood.jpg",
       vipPerks: "Private diaspora roundtable and press briefing."
     }
   ],
@@ -442,12 +422,12 @@ export const CELEBRITY_DATA = {
   // Commercials, Brand Endorsements & UGC Ads Desk
   commercialsAndUgc: {
     heroTag: "Premium Brand Endorsements & High-Converting UGC Campaigns",
-    description: "Naumaan Ijaz's authoritative persona, commanding voice, and universal respect across Pakistani and international diaspora demographics deliver unparalleled credibility to luxury, corporate, and lifestyle brands.",
+    description: "Naumaan Ijaz's authoritative persona, commanding voice, and universal respect deliver unparalleled credibility to luxury, corporate, and lifestyle brands.",
     keyMetrics: [
-      { label: "Diaspora Conversion Authority", value: "98%" },
-      { label: "Demographic Trust Index", value: "#1 Male Actor" },
-      { label: "Average Brand Reel Reach", value: "2.5M - 8M" },
-      { label: "Household Brand Recall", value: "99.4%" }
+      { label: "Diaspora Authority", value: "98%" },
+      { label: "Trust Index", value: "#1 Male Actor" },
+      { label: "Average Brand Reach", value: "2.5M - 8M" },
+      { label: "Brand Recall", value: "99.4%" }
     ],
     brandsShowcase: [
       {
@@ -455,52 +435,56 @@ export const CELEBRITY_DATA = {
         category: "Luxury Eastern Attire & Fragrances",
         campaign: "Royal Heritage Festive Ambassador",
         reach: "15M+ Views",
-        deliverables: "National TVC + Digital Billboard + VIP Store Launch",
-        year: "2023 - 2024"
+        deliverables: "National TVC + Digital Billboard",
+        year: "2023 - 2024",
+        image: "/assets/images/brand-royal-festive.jpg"
       },
       {
         name: "Edenrobe Men",
         category: "Premium Formal Wear",
         campaign: "The Aristocrat Line",
         reach: "10M+ Views",
-        deliverables: "Cinematic Film Ad + Print + Social UGC Endorsement",
-        year: "2023"
+        deliverables: "Cinematic Film Ad + UGC Campaign",
+        year: "2023",
+        image: "/assets/images/char-behroze.jpg"
       },
       {
         name: "Master Tiles & Ceramics",
         category: "Architectural & Interior Luxury",
         campaign: "Grandeur of Pakistan",
         reach: "18M+ Impressions",
-        deliverables: "Prime-Time Satellite Commercial + International Expo Face",
-        year: "2022 - 2024"
+        deliverables: "Prime-Time Commercial + Expo Face",
+        year: "2022 - 2024",
+        image: "/assets/images/event-stage.jpg"
       },
       {
         name: "Tapal Tea",
         category: "FMCG Legacy Brand",
-        campaign: "Har Lamha Dil Se (Memories & Warmth)",
+        campaign: "Har Lamha Dil Se",
         reach: "25M+ Household Reach",
         deliverables: "Iconic TVC Monologue & Family Festive Ad",
-        year: "2021"
+        year: "2021",
+        image: "/assets/images/lifestyle-lahore.jpg"
       }
     ],
     ugcServices: [
       {
-        title: "High-Authority UGC Video Ads",
-        desc: "Personalized short-form 9:16 vertical video reviews and endorsements for high-growth tech apps, luxury real estate, and lifestyle consumer products.",
-        turnaround: "7-10 Business Days",
-        idealFor: "E-Commerce Brands, FinTech, Luxury Real Estate"
+        title: "Vertical UGC Video Ads (9:16)",
+        desc: "Personalized short-form endorsements for luxury real estate, tech platforms, and premium consumer brands.",
+        turnaround: "7-10 Days",
+        idealFor: "E-Commerce, FinTech, Real Estate"
       },
       {
-        title: "Celebrity Brand Ambassadorship",
-        desc: "Comprehensive 6-month or 12-month 360-degree endorsement including TVCs, press conferences, hoardings, and exclusive seasonal product lines.",
-        turnaround: "Annual Contracts",
-        idealFor: "National & Global Corporate Giants"
+        title: "Celebrity Ambassadorship",
+        desc: "Comprehensive 360-degree endorsement including TVCs, press events, and seasonal product lines.",
+        turnaround: "Annual Retainers",
+        idealFor: "Corporate Giants"
       },
       {
-        title: "Social Media Collaborative Posts",
-        desc: "Joint Instagram Reels, Facebook official posts, and story highlights reaching millions of engaged South Asian consumers worldwide.",
+        title: "Collaborative Social Posts",
+        desc: "Joint Instagram Reels and Facebook verified posts reaching millions of engaged consumers.",
         turnaround: "Custom Schedule",
-        idealFor: "Major Product Launches & Cultural Festivals"
+        idealFor: "Major Product Launches"
       }
     ]
   },

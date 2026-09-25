@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CELEBRITY_DATA } from '../data/celebrityData';
-import { Globe, MapPin, Calendar, Ticket, Crown, CheckCircle, ArrowRight } from 'lucide-react';
+import { MapPin, Calendar, ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function InternationalTours({ onOpenChat }) {
   const { internationalEvents } = CELEBRITY_DATA;
@@ -18,127 +18,96 @@ export default function InternationalTours({ onOpenChat }) {
   };
 
   return (
-    <section id="tours" className="relative py-24 bg-obsidian-900/60 border-t border-neutral-800/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="tours" className="relative py-24 bg-obsidian-950 border-t border-neutral-900">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-300 text-xs font-mono uppercase tracking-widest">
-            <Globe className="w-3.5 h-3.5" />
-            <span>Worldwide Diaspora & Galas</span>
-          </div>
+        {/* Header */}
+        <div className="max-w-2xl mb-16 space-y-2">
+          <span className="text-[11px] font-mono uppercase tracking-widest text-gold-400">
+            Global Appearances
+          </span>
           <h2 className="text-3xl sm:text-5xl font-serif font-black text-white tracking-tight">
-            International <span className="gold-gradient-text">Appearances</span>
+            International <span className="gold-gradient-text">Galas</span>
           </h2>
-          <p className="text-neutral-400 text-sm sm:text-base leading-relaxed">
-            Connecting with millions of admirers across North America, the United Kingdom, Europe, and the Middle East for exclusive keynote monologues, cinema galas, and VIP meet-and-greets.
+          <p className="text-neutral-400 text-sm leading-relaxed">
+            Connecting with diaspora audiences across North America, the United Kingdom, Europe, and the Middle East.
           </p>
         </div>
 
-        {/* Events Grid */}
+        {/* 2-Column Minimalist Grid with Distinct Visuals */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {internationalEvents.map((evt) => (
             <div
               key={evt.id}
-              className="p-8 rounded-3xl bg-obsidian-950 border border-neutral-800 hover:border-gold-500/40 transition-all duration-300 hover:shadow-2xl hover:shadow-gold-500/10 flex flex-col justify-between group"
+              className="rounded-2xl overflow-hidden bg-obsidian-900/40 border border-neutral-800 hover:border-gold-500/40 transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
-                {/* City & Status Badge */}
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-2 text-gold-400 font-mono text-sm font-semibold">
-                    <MapPin className="w-4 h-4 text-gold-400 flex-shrink-0" />
-                    <span>{evt.city}</span>
-                  </div>
-                  <span className="px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-300 font-mono text-xs">
+                <div className="relative aspect-[16/9] overflow-hidden bg-obsidian-950">
+                  <img
+                    src={evt.image}
+                    alt={evt.city}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-transparent"></div>
+                  <span className="absolute top-3 left-3 px-2.5 py-0.5 rounded-md bg-obsidian-950/80 backdrop-blur-sm border border-neutral-800 text-[10px] font-mono text-gold-400 uppercase">
                     {evt.status}
                   </span>
                 </div>
 
-                {/* Event Name */}
-                <h3 className="text-2xl font-serif font-bold text-white group-hover:text-gold-200 transition-colors mb-2">
-                  {evt.event}
-                </h3>
-
-                {/* Venue & Date */}
-                <div className="space-y-1.5 mb-6 text-xs sm:text-sm text-neutral-300">
-                  <div className="flex items-center gap-2 text-neutral-400">
-                    <Calendar className="w-3.5 h-3.5 text-gold-400" />
+                <div className="p-6 space-y-2">
+                  <div className="flex items-center gap-1.5 text-xs text-neutral-400 font-mono">
+                    <MapPin className="w-3.5 h-3.5 text-gold-400" />
+                    <span>{evt.city}</span>
+                    <span className="text-neutral-600">•</span>
                     <span>{evt.date}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-neutral-400">
-                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-600"></span>
-                    <span>Venue: {evt.venue}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-neutral-400">
-                    <span className="w-1.5 h-1.5 rounded-full bg-neutral-600"></span>
-                    <span>Format: {evt.type}</span>
-                  </div>
-                </div>
 
-                {/* VIP Perks */}
-                <div className="p-4 rounded-2xl bg-obsidian-900 border border-neutral-800/80 mb-6">
-                  <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-gold-400 font-semibold mb-1">
-                    <Crown className="w-3.5 h-3.5" />
-                    <span>VIP Inclusions</span>
-                  </div>
-                  <p className="text-xs text-neutral-300 leading-relaxed font-light">
-                    {evt.vipPerks}
+                  <h3 className="text-xl font-serif font-bold text-white group-hover:text-gold-200 transition-colors">
+                    {evt.event}
+                  </h3>
+
+                  <p className="text-xs text-neutral-400 font-light leading-relaxed">
+                    Venue: {evt.venue} — {evt.vipPerks}
                   </p>
                 </div>
               </div>
 
-              {/* Booking Action */}
-              <div className="pt-4 border-t border-neutral-800/80 flex items-center justify-between gap-4">
+              <div className="p-6 pt-0 border-t border-neutral-900/60 flex items-center justify-between">
                 <button
                   onClick={onOpenChat}
-                  className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-gold-500 via-gold-400 to-amber-500 text-obsidian-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow hover:scale-102 active:scale-98 transition-all"
+                  className="text-xs font-semibold uppercase tracking-wider text-gold-400 hover:text-white transition-colors"
                 >
-                  <Ticket className="w-3.5 h-3.5" />
-                  <span>Request VIP Pass</span>
+                  Request VIP Pass →
                 </button>
               </div>
-
             </div>
           ))}
         </div>
 
-        {/* "Request Tour In Your City" Interactive Banner */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-obsidian-900 via-obsidian-850 to-obsidian-900 border border-gold-500/30 flex flex-col lg:flex-row items-center justify-between gap-8">
-          <div className="space-y-2 text-center lg:text-left">
-            <span className="text-xs font-mono uppercase tracking-widest text-gold-400 font-semibold">
-              Host Naumaan Ijaz Overseas
-            </span>
-            <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white">
-              Want a Tour Date in Your City?
+        {/* Clean City Request Strip */}
+        <div className="p-6 sm:p-8 rounded-2xl bg-obsidian-900/40 border border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="space-y-1 text-center sm:text-left">
+            <h3 className="text-base font-serif font-bold text-white">
+              Want a Tour Appearance in Your City?
             </h3>
-            <p className="text-sm text-neutral-400 max-w-xl">
-              South Asian student societies, cultural organizations, and community event organizers can request international appearances and spoken-word keynote sessions.
+            <p className="text-xs text-neutral-400">
+              South Asian community organizations and student societies can suggest host cities.
             </p>
           </div>
 
-          <form onSubmit={handleCitySubmit} className="w-full lg:w-auto flex-shrink-0 flex flex-col sm:flex-row gap-3">
+          <form onSubmit={handleCitySubmit} className="flex gap-2 w-full sm:w-auto">
             <input
               type="text"
               placeholder="e.g. Sydney, Chicago, Birmingham..."
               value={requestedCity}
               onChange={(e) => setRequestedCity(e.target.value)}
-              className="px-5 py-3.5 rounded-xl bg-obsidian-950 border border-neutral-700 text-white placeholder-neutral-500 text-xs sm:text-sm focus:outline-none focus:border-gold-400 w-full sm:w-72"
+              className="px-4 py-2 rounded-xl bg-obsidian-950 border border-neutral-800 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-gold-400 w-full sm:w-64"
             />
             <button
               type="submit"
-              className="px-6 py-3.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-obsidian-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 whitespace-nowrap transition-all shadow"
+              className="px-5 py-2 rounded-xl bg-gold-500 hover:bg-gold-400 text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-colors whitespace-nowrap"
             >
-              {citySubmitted ? (
-                <>
-                  <CheckCircle className="w-4 h-4 text-obsidian-950" />
-                  <span>City Logged!</span>
-                </>
-              ) : (
-                <>
-                  <span>Submit City</span>
-                  <ArrowRight className="w-4 h-4" />
-                </>
-              )}
+              {citySubmitted ? "Logged!" : "Submit"}
             </button>
           </form>
         </div>
