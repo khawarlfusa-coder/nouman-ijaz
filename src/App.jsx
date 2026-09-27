@@ -1,126 +1,58 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import StatusStories from './components/StatusStories';
-import StoryModal from './components/StoryModal';
-import Biography from './components/Biography';
-import Filmography from './components/Filmography';
-import UpcomingProjects from './components/UpcomingProjects';
-import InternationalTours from './components/InternationalTours';
-import CommercialsAndUGC from './components/CommercialsAndUGC';
-import SocialFeed from './components/SocialFeed';
-import ContactAndBooking from './components/ContactAndBooking';
-import Footer from './components/Footer';
+import EditorialStories from './components/EditorialStories';
+import EditorialWorks from './components/EditorialWorks';
+import EditorialMonologue from './components/EditorialMonologue';
+import EditorialRepresentation from './components/EditorialRepresentation';
 import ConciergeChat from './components/ConciergeChat';
+import StoryModal from './components/StoryModal';
 import ShowreelModal from './components/ShowreelModal';
 
 export default function App() {
   const [selectedStoryIndex, setSelectedStoryIndex] = useState(null);
   const [showreelOpen, setShowreelOpen] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
-  const [soundEnabled, setSoundEnabled] = useState(false);
-
-  // Audio tone synthesizer for cinema ambiance when enabled
-  useEffect(() => {
-    if (!soundEnabled) return;
-
-    let audioCtx;
-    let osc;
-    let gain;
-
-    try {
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
-      audioCtx = new AudioContext();
-      osc = audioCtx.createOscillator();
-      gain = audioCtx.createGain();
-
-      // Deep cinematic drone (F# 92Hz)
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(92.5, audioCtx.currentTime);
-      gain.gain.setValueAtTime(0.015, audioCtx.currentTime); // Very soft background presence
-
-      osc.connect(gain);
-      gain.connect(audioCtx.destination);
-      osc.start();
-    } catch (e) {
-      console.log('Audio init prevented or not supported', e);
-    }
-
-    return () => {
-      try {
-        if (osc) osc.stop();
-        if (audioCtx) audioCtx.close();
-      } catch (err) {}
-    };
-  }, [soundEnabled]);
 
   return (
-    <div className="min-h-screen bg-obsidian-950 text-neutral-100 flex flex-col relative selection:bg-gold-500/30 selection:text-gold-200">
-      {/* Top Navbar */}
-      <Navbar
-        onOpenChat={() => setChatOpen(true)}
-        soundEnabled={soundEnabled}
-        setSoundEnabled={setSoundEnabled}
-      />
+    <div className="min-h-screen bg-obsidian-950 text-neutral-100 flex flex-col relative selection:bg-gold-500/30 selection:text-gold-200 antialiased overflow-x-hidden">
+      {/* Editorial Masthead Navbar */}
+      <Navbar onOpenChat={() => setChatOpen(true)} />
 
-      {/* Hero Section */}
-      <Hero
-        onOpenVideoModal={() => setShowreelOpen(true)}
-        onOpenStory={(idx) => setSelectedStoryIndex(idx)}
-        onOpenChat={() => setChatOpen(true)}
-      />
+      <main className="flex-1">
+        {/* GQ / Vogue High-Fashion Cover Hero */}
+        <Hero
+          onOpenVideoModal={() => setShowreelOpen(true)}
+          onOpenStory={(idx) => setSelectedStoryIndex(idx)}
+        />
 
-      {/* Main Page Social Stories / Status Feed (Instagram / WhatsApp Style) */}
-      <StatusStories
-        onSelectStory={(index) => setSelectedStoryIndex(index)}
-      />
+        {/* Editorial Stories & Dispatches Ticker */}
+        <EditorialStories
+          onSelectStory={(index) => setSelectedStoryIndex(index)}
+        />
 
-      {/* Comprehensive Biography & Awards */}
-      <Biography />
+        {/* Single-Page Massive Cinematic Photography Spreads */}
+        <EditorialWorks
+          onOpenChat={() => setChatOpen(true)}
+        />
 
-      {/* Filmography & Character Masterpieces */}
-      <Filmography
-        onOpenChat={() => setChatOpen(true)}
-      />
+        {/* Monologue Pull-Quote Spread: "The Anatomy of Silence" */}
+        <EditorialMonologue />
 
-      {/* Upcoming Cinema & OTT Projects */}
-      <UpcomingProjects
-        onOpenChat={() => setChatOpen(true)}
-      />
+        {/* Clean Luxury Representation, Inquire Desk & Contact */}
+        <EditorialRepresentation
+          onOpenChat={() => setChatOpen(true)}
+        />
+      </main>
 
-      {/* International Tours & Appearances */}
-      <InternationalTours
-        onOpenChat={() => setChatOpen(true)}
-      />
-
-      {/* Commercials, Brand Deals & UGC Ads Desk */}
-      <CommercialsAndUGC
-        onOpenChat={() => setChatOpen(true)}
-      />
-
-      {/* Connected Social Feed & Handles */}
-      <SocialFeed
-        onOpenStory={(idx) => setSelectedStoryIndex(idx)}
-      />
-
-      {/* Official Management Contact & Booking */}
-      <ContactAndBooking
-        onOpenChat={() => setChatOpen(true)}
-      />
-
-      {/* Footer */}
-      <Footer
-        onOpenChat={() => setChatOpen(true)}
-      />
-
-      {/* Floating 24/7 AI Concierge Chat Assistant */}
+      {/* 24/7 Executive Live Concierge Chat Desk */}
       <ConciergeChat
         isOpen={chatOpen}
         onClose={() => setChatOpen(false)}
         onOpen={() => setChatOpen(true)}
       />
 
-      {/* Full-Screen Instagram / WhatsApp Style Story Player Modal */}
+      {/* Full-Screen Editorial Story Viewer Modal */}
       {selectedStoryIndex !== null && (
         <StoryModal
           storyIndex={selectedStoryIndex}
@@ -129,7 +61,7 @@ export default function App() {
         />
       )}
 
-      {/* Parizaad & Masterclass Showreel Modal */}
+      {/* Monologue Video Showreel Modal */}
       <ShowreelModal
         isOpen={showreelOpen}
         onClose={() => setShowreelOpen(false)}
